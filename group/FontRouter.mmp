@@ -1,0 +1,49 @@
+/*
+   Copyright 2007 oasisfeng
+   http://fontrouter.oasisfeng.com/
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+*/
+
+TARGET  FontRouter.dll
+TARGETTYPE  dll
+UID  0x10003B1F 0x102050F9		// UID3 is obtained from Symbian 
+TARGETPATH \system\fonts
+
+SOURCEPATH ..\src
+SOURCE  FontRouter.cpp
+//SOURCE  FontRouterAPI.cpp
+SOURCE  CSettings.cpp
+SOURCE  DebugHelper.cpp
+
+LANG     SC
+
+USERINCLUDE ..\inc
+
+SYSTEMINCLUDE \epoc32\include
+
+LIBRARY euser.lib
+LIBRARY fntstr.lib
+LIBRARY flogger.lib
+LIBRARY efsrv.lib
+LIBRARY gdi.lib
+LIBRARY fbscli.lib
+LIBRARY charconv.lib
+LIBRARY hal.lib
+LIBRARY bafl.lib	// CDesC16ArrayFlat
+LIBRARY eikcore.lib	// CEikonEnv
+LIBRARY estlib.lib	// wcslen()
+LIBRARY cone.lib	// CCoeEnv::Version()
+
+nostrictdef
+EXPORTUNFROZEN

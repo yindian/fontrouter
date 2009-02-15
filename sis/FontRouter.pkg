@@ -1,0 +1,19 @@
+;
+; Installation file for FontRouter
+;
+
+&EN,ZH
+
+#{"FontRouter LT", "FontRouter LT"}, (0x102050F9), 2, 8, 20071109, TYPE=SA
+
+
+{"FontRouter.txt" "FontRouter_CN.txt"}                                      - "", FT, TC
+
+{"FontRouter.txt" "FontRouter_CN.txt"}                                      - "C:\System\Fonts\$FontRouter.txt"
+{"FontRouter.txt" "FontRouter_CN.txt"}                                      - "C:\System\Fonts\$FontRouterDummy1.txt"
+{"FontRouter.txt" "FontRouter_CN.txt"}                                      - "C:\System\Fonts\$FontRouterDummy2.txt"
+{"FontRouter.txt" "FontRouter_CN.txt"}                                      - "C:\System\Fonts\$FontRouterDummy3.txt"
+{"FontRouter.txt" "FontRouter_CN.txt"}                                      - "C:\System\Fonts\$FontRouterDummy4.txt"
+{"FontRouter.txt" "FontRouter_CN.txt"}                                      - "C:\System\Fonts\$FontRouterDummy5.txt"
+"D:\Symbian\6.1\Series60\Epoc32\Release\armi\urel\FontRouter.DLL"           - "!:\System\Fonts\FontRouter.dll"
+"INI\FontRouter.ini"                                                        - "!:\Data\Fonts\FontRouter.ini"

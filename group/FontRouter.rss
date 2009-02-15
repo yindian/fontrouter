@@ -1,0 +1,24 @@
+#include "RegistryInfo.rh"
+
+RESOURCE REGISTRY_INFO theInfo
+{
+	dll_uid = 0x20009F34;
+	interfaces =
+	{
+		INTERFACE_INFO
+		{
+			interface_uid = 0x101F7F5D; //KUidOpenFontRasterizerPlunginInterface
+			implementations =
+			{
+				IMPLEMENTATION_INFO
+				{
+					implementation_uid = 0x20009F34;
+					version_no = 1;
+					display_name = "FontRouter";
+					default_data = "Font Enhancement Plugin";
+					opaque_data = " ";
+				}
+			};
+		}
+	};
+}
