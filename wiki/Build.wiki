@@ -1,0 +1,4 @@
+#labels Phase-Implementation
+You may experience some errors when building against standard SDKs for the first time. This is because FontRouter use a few treaked header files.
+
+For errors indicating access violence, you need to add corresponding FontRouter classes to the class declaration in SDK header as friend classes. This will get all the private/protected members accessable to FontRouter classes.
